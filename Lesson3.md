@@ -1,49 +1,33 @@
 # Flutter ウィジェットのレイアウト
 
-## 1. 基本レイアウトウィジェット
+## 1. テキストスタイル
 
 | ウィジェット | 説明 |
 |------------|------|
-| `Container` | サイズ、パディング、マージン、背景色を設定可能 |
-| `Row` | 子ウィジェットを横に並べる |
-| `Column` | 子ウィジェットを縦に並べる |
-| `Stack` | 子ウィジェットを重ねて配置する |
-| `Expanded` | `Row`や`Column`内で利用し、可変サイズを指定 |
-| `Padding` | 内側の余白を設定する |
+| `fontSize` | フォントサイズ |
+| `fontWeight` | フォントの太さ |
+| `fontFamily` | フォントファミリー |
+| `color` | テキスト色 |
 
-## 2. レイアウト制御ウィジェット
+## 2. Conteinerクラス
 
 | ウィジェット | 説明 |
 |------------|------|
-| `SizedBox` | 固定サイズのスペースを確保 |
-| `Align` | 子ウィジェットを配置位置に合わせる |
-| `Center` | 子ウィジェットを中央に配置 |
-| `Flexible` | `Expanded`に似ているが、柔軟なレイアウト指定が可能 |
-| `AspectRatio` | 幅と高さの比率を調整 |
+| `Color` | 色の指定 |
+| `Alignment` | 配置場所の指定 |
+| `Sized` | 表示サイズを最大化 |
+| `Padding` | 余白幅の設定 |
 
-## 3. リスト＆スクロールウィジェット
-
-| ウィジェット | 説明 |
-|------------|------|
-| `ListView` | スクロール可能なリスト |
-| `GridView` | グリッドレイアウト |
-| `SingleChildScrollView` | 1つの子ウィジェットをスクロール可能にする |
-| `CustomScrollView` | `Sliver`を用いたスクロールレイアウト |
-
-## 4. レスポンシブレイアウトウィジェット
+## 3. Alignmentについて
 
 | ウィジェット | 説明 |
 |------------|------|
-| `MediaQuery` | 画面サイズや向きを取得 |
-| `LayoutBuilder` | 親のサイズに応じてレイアウトを変更 |
-| `FittedBox` | 子ウィジェットを親にフィットさせる |
-| `AspectRatio` | 画面サイズに応じた比率でレイアウト |
-
-## 5. その他のレイアウト関連ウィジェット
-
-| ウィジェット | 説明 |
-|------------|------|
-| `Wrap` | `Row`や`Column`の代わりに使い、折り返し可能 |
-| `FractionallySizedBox` | 親のサイズを基準にサイズを指定 |
-| `Positioned` | `Stack`内で指定位置に配置 |
-| `Spacer` | `Row`や`Column`内で隙間を作る |
+| `topLeft` | 左上 |
+| `topCenter` | 中央上 |
+| `topRight` | 右上 |
+| `centerLeft` | 左中央 |
+| `center` | 中央 |
+| `centerRight` | 右中央 |
+| `bottomLeft` | 左下 |
+| `bottomCenter` | 中央下 |
+| `bottomRight` | 右下 |
